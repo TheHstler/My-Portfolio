@@ -8,6 +8,6 @@ I’m currently building this site using HTML, CSS, and JavaScript to showcase:
 
 ## 🔗 Live Site
 
-👉 [your-portfolio-site.com]([https://your-portfolio-site.com](https://thehstler.github.io/My-Portfolio/)) 
+👉 [(https://thehstler.github.io/My-Portfolio/)]
 
 Check back soon for live updates!
