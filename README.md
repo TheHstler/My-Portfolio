@@ -6,5 +6,8 @@ I’m currently building this site using HTML, CSS, and JavaScript to showcase:
 - CV site (HTML/CSS)
 - Front-end projects
 
-Check back soon for live updates!
+## 🔗 Live Site
 
+👉 [your-portfolio-site.com]([https://your-portfolio-site.com](https://thehstler.github.io/My-Portfolio/)) 
+
+Check back soon for live updates!
