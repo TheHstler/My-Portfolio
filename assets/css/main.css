@@ -2309,6 +2309,16 @@ input, select, textarea {
 						width: calc(100% - 1.5rem);
 					}
 
+#form-status {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#form-status.show {
+  opacity: 1;
+}
+
+
 		}
 
 	label {
