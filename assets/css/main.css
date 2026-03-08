@@ -4935,17 +4935,4 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 
-  .sport-images {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  .sport-images img {
-    width: 260px;
-    max-width: 100%;
-    height: auto;
-  }
 }
