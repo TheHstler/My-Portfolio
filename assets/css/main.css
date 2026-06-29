@@ -4936,3 +4936,190 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   }
 
 }
+
+
+
+
+/* --- grid style - new --- */
+
+.project-grid {
+    display: grid;
+    /* This automatically creates columns that fit the screen size */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The Hover Effect: Makes the card lift up slightly when the mouse is over it */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: #bbbbbb;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Pushes the tech stack to the bottom */
+}
+
+/* Styling the little technology badges */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-stack span {
+    background-color: #f0f0f0;
+    color: #444444;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+
+/* --- CONTACT FORM FIELD VISIBILITY FIX --- */
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-color: #b5b9bd !important; /* A slightly darker, visible grey */
+    background-color: #fafafa !important; /* A very subtle light grey background */
+    border-radius: 4px !important; /* Adds a modern, soft curve to the edges */
+}
+
+/* This ensures the box still turns your signature blue when someone clicks into it to type */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #18bfef !important; 
+    background-color: #ffffff !important;
+}
+
+
+
+
+/* --- STICKY NAVIGATION BAR FIX --- */
+
+/* The template hides overflow by default, which breaks "sticky" navs. This fixes that. */
+#wrapper {
+    overflow: visible !important; 
+}
+
+/* This forces the navigation bar to stick to the top of the screen */
+#nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 10000; /* Keeps it hovering above all your images and text */
+    background-color: #1e252d !important; /* Gives it a solid dark background so text doesn't overlap as you scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a cool shadow underneath it */
+}
+
+
+
+/* --- BU SPORTS CARDS STYLES --- */
+
+.sports-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* This controls how close they are. Decrease to 20px if you want them tighter! */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.sport-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; 
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; 
+    cursor: pointer; /* Changed to pointer so they know they can click it! */
+    text-decoration: none; /* Stops the text from getting underlined like a normal link */
+}
+
+/* The Updated Colored Hover Effect */
+.sport-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(24, 191, 239, 0.3); /* Matches the bright cyan/blue shadow */
+    border-color: #18bfef;
+}
+
+.sport-img-container {
+    width: 100%;
+    height: 200px; /* Forces both images to be the exact same height */
+    overflow: hidden;
+    background-color: #000; /* Good backdrop for the dragon logo */
+}
+
+.sport-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box without stretching weirdly */
+}
+
+.sport-content {
+    padding: 20px;
+}
+
+.sport-content h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.sport-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 0;
+}
+
+
+/* --- BIG ABOUT ME CARD STYLES --- */
+.big-profile-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Subtle default shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The colored shadow when you hover over the big card */
+.big-profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(24, 191, 239, 0.3); /* Bright cyan/blue shadow */
+    border-color: #18bfef;
+}
