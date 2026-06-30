@@ -5123,3 +5123,69 @@ textarea:focus {
     box-shadow: 0 15px 30px rgba(24, 191, 239, 0.3); /* Bright cyan/blue shadow */
     border-color: #18bfef;
 }
+
+/* --- GLOBAL MODERNIZATION (Making the cards pop!) --- */
+/* This turns the stark white background into a soft, modern light-grey */
+#main {
+    background-color: #f8f9fa !important; 
+}
+
+/* This targets the main content blocks to ensure they blend nicely */
+#main > * {
+    background-color: transparent !important;
+    border-top: none !important; /* Removes the harsh old grey divider lines */
+}
+
+/* --- CONTACT CARD STYLES --- */
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 15px 30px rgba(24, 191, 239, 0.15); /* Soft glowing blue shadow */
+    border-color: #18bfef;
+}
+
+/* --- FIXING THE BORING WHITE BACKGROUND --- */
+#main {
+    /* Changes the endless white to a soft, modern, inviting light slate color */
+    background-color: #f4f6f9 !important; 
+}
+
+/* --- MAKING CARD BORDERS VISIBLE IMMEDIATELY --- */
+.project-card, .sport-card, .big-profile-card, .contact-card {
+    background-color: #ffffff !important; 
+    
+    /* Darkened the border so it outlines the card much more clearly */
+    border: 1px solid #9ba8b5 !important; 
+    
+    /* Deepened the shadow so the card looks like it's floating higher */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1) !important; 
+}
+
+/* The Hover Effect (Ensures it still glows blue when you hover) */
+.project-card:hover, .sport-card:hover, .big-profile-card:hover, .contact-card:hover {
+    border-color: #18bfef !important;
+    box-shadow: 0 15px 30px rgba(24, 191, 239, 0.2) !important;
+}
+
+/* --- PROJECT DETAIL CARDS (For writing inside project pages) --- */
+.detail-card {
+    background-color: #ffffff !important;
+    border: 1px solid #9ba8b5 !important;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05) !important;
+    height: 100%; /* This forces side-by-side cards to be the exact same height */
+}
+
+/* Removes the top margin from the first heading inside a card so it sits flush */
+.detail-card h3:first-child {
+    margin-top: 0;
+}
