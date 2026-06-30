@@ -5189,3 +5189,56 @@ textarea:focus {
 .detail-card h3:first-child {
     margin-top: 0;
 }
+
+
+/* Make cards pop and bounce on hover */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; /* Softer, modern edges */
+    padding: 20px;
+    background: #ffffff;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* The bounce effect */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); /* Deep, modern shadow */
+}
+
+/* Stylish, colored tags */
+.tag {
+    background-color: #e0f7fa;
+    color: #006064;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* --- Beyond the Screen Grid Fix --- */
+.sports-grid {
+    display: flex;
+    justify-content: center; /* Centers the cards in the middle of the page */
+    flex-wrap: wrap;       /* Allows them to stack on mobile */
+    gap: 20px;
+   /* The first number is top/bottom margin, the second is left/right */
+    margin: 80px auto;
+    max-width: 1200px;     /* Prevents them from getting too wide */
+}
+
+/* Force space above the headline specifically */
+.beyond-the-screen-section {
+    margin-top: 100px !important;
+}
+
+.sport-card {
+    flex: 1;               /* Makes them grow to fill equal space */
+    min-width: 300px;      /* Ensures they don't get too skinny */
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
